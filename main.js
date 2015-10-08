@@ -50,14 +50,19 @@ $(document).ready(function() {
 		}, 1000
 	);
 	
+	$('.infodiv').css('top', '-2%');
+	//$('.infopicture').css('margin-top', '-5px');
+	
 	$('.userinfo').text('Signed in as ' + username);
 	$('.userinfo').click(function() {
 		var url = 'https://www.reddit.com/u/'+username;
 		window.open(url, '_blank');
 	});
 	
-	$('#leftlarge').each(function() {
-		$('.infopicture').css('margin-top', '20px');
-	});
 	
+	$('.infopicture').click(function() {
+		var url = $(this).attr('data-link');
+		console.log(url);
+		window.open(url, '_blank');
+	});
 });

@@ -13,7 +13,7 @@ html {
 	outline: none;
 	border: none;
 	background-color: #00804C;
-	overflow: hidden;
+	overflow: auto;
 }
 
 body {
@@ -63,13 +63,14 @@ body {
 .infodiv {
 	height: 75%;
 	width: 100%;
+	position: relative;
+	top: 30%;
 }
 
 .infopicture {
 	height: 75%;
 	width: 95%;
 	border: 1px solid black;
-	padding: 0;
 }
 
 .userinfo {
@@ -169,6 +170,17 @@ body {
 .infodiv > h3 {
 	font-size: 20px;
 	font-family: monospace;
+}
+
+.infodiv > p {
+	font-size: 14px;
+	font-family: monospace;
+	
+}
+
+p > a {
+	text-decoration: none;
+	color: darkgray;
 }
 
 .userinfo:hover {
