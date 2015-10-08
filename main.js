@@ -26,14 +26,24 @@ $(document).ready(function() {
 		};
 	});
 	
-	$('<div class="home" id="lefthome"></div>').appendTo($('body'));
 	$('#lefthome').animate(
 		{
 			left: '+=45%'
 		}, 1000
 	);
 	
-	$('<div class="home" id="righthome"></div>').appendTo($('body'));
+	$('#leftlarge').animate(
+		{
+			left: '+=45%'
+		}, 1000
+	);
+	
+	$('#rightlarge').animate(
+		{
+			left: '-=40%'
+		}, 1000
+	);
+	
 	$('#righthome').animate(
 		{
 			left: '-=40%'

@@ -111,6 +111,17 @@ body {
 	transform: translateX(330%);
 }
 
+#leftlarge {
+	transform: translateX(-130%) translateY(15%); -webkit-transform: translateX(-130%) translateY(15%);
+	height: 600px;
+}
+
+#rightlarge {
+	transform: translateX(330%) translateY(15%); -webkit-transform: translateX(330%) translateY(15%);
+	height: 600px;
+}
+
+
 #T1 {
 	left: 400px;
 }
