@@ -56,4 +56,8 @@ $(document).ready(function() {
 		window.open(url, '_blank');
 	});
 	
+	$('#leftlarge').each(function() {
+		$('.infopicture').css('margin-top', '20px');
+	});
+	
 });
