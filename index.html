@@ -1,67 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<meta charset="utf-8">
+	<title>WhoWearsNumber</title>
+	<link href="stylesheet.css" rel="stylesheet"/>
+</head>
 
-	<html>
-		
-		<head>
-			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-			<link rel="icon" href="favicon.ico" type="image/x-icon">
-			<title>James Hynes' Projects</title>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<link type='text/css', rel='stylesheet', href='stylesheet.css'/>
-			<script type='text/javascript' src='main.js'></script>
-		</head>
-		
-		<body>
-			<div class='header' style='text-align: center'>
-				<div id='title'>Projects and Things</div>
-				<div class='tab' id='T1'></div>
-				<div class='hiddentab' id='T1'><h1>Home</h1></div>
-				<div class='tab' id='T2'></div>
-				<div class='hiddentab' id='T2'><h1>About<h1></div>
-				<div class='tab' id='T3'></div>
-				<div class='hiddentab' id='T3'><h1>Apps</h1></div>
-				<div class='tab' id='T4'></div>
-				<div class='hiddentab' id='T4'><h1>Games</h1></div>
-				<div class='tab' id='T5'></div>
-				<div class='hiddentab' id='T5'><h1>Sites</h1></div>
-				<div class='tab' id='T6'></div>
-				<div class='hiddentab' id='T6'><h1>Misc</h1></div>
-				<div class='userinfo'></div>
-			</div>
-			
-			<div class='home' id='lefthome'>Current Projects</div>
-			<div class="home" id='leftlarge'>
-				<div class='infodiv'>
-					<h3>NBA Stats Utilities</h3>
-					<img src='img1.png' class='infopicture' data-link='https://github.com/lookamango/NBA-Stats-Utilities'/>
-					<p>Language: Python<br></br>Description: Scrapes <a href='http://stats.nba.com/'>the NBA stats website</a> for advanced stats</p>
-				</div>
-				<div class='infodiv'>
-					<h3><br>NBA Stats Utilities</h3>
-					<img src='img1.png' class='infopicture' data-link='https://github.com/lookamango/NBA-Stats-Utilities'/>
-					<p>Language: Python<br></br>Description: Scrapes <a href='http://stats.nba.com/'>the NBA stats website</a> for advanced stats</p>
-				</div>
-				<div class='infodiv'>
-					<br>
-					<h3><br>NBA Stats Utilities</h3>
-					<img src='img1.png' class='infopicture' data-link='https://github.com/lookamango/NBA-Stats-Utilities'/>
-					<p>Language: Python<br></br>Description: Scrapes <a href='http://stats.nba.com/'>the NBA stats website</a> for advanced stats</p>
-				</div>
-				<div class='infodiv'>
-					<br>
-					<br>
-					<h3><br>NBA Stats Utilities</h3>
-					<img src='img1.png' class='infopicture' data-link='https://github.com/lookamango/NBA-Stats-Utilities'/>
-					<p>Language: Python<br></br>Description: Scrapes <a href='http://stats.nba.com/'>the NBA stats website</a> for advanced stats</p>
-				</div>
-				
-			</div>
-			<div class='home' id='righthome'>Finished Projects</div>
-			<div class="home" id='rightlarge'></div>
-			
-		</body>
-		
-		
-		
-		
-	</html>
+<body>
+	<div id="container">
+		<form method="get" id="playerform" name="playerform">
+			Who wears number
+			<input type="text" name="domain" id="number_input" placeholder="30" maxlength="2" autofocus size="1"/>
+			on the
+			<input type="text" name="domain" id="team_input" size="10"/>
+			?
+		</form>
+	</div>
+	<div class="player-container"></div>
+	<script src='main.js'></script>
+</body>
+</html>
